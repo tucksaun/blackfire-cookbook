@@ -7,7 +7,7 @@
 #
 
 case node['platform_family']
-when 'rhel', 'fedora'
+when 'amazon', 'rhel', 'fedora'
   yum_repository 'blackfire' do
     description 'blackfire'
     baseurl "#{node[cookbook_name]['repository']}/fedora/$releasever/$basearch"
