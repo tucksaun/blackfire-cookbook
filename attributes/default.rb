@@ -10,6 +10,8 @@ default['blackfire']['install_repository'] = true
 
 default['blackfire']['agent']['version'] = nil
 default['blackfire']['agent']['collector'] = 'https://blackfire.io'
+default['blackfire']['agent']['http_proxy'] = nil
+default['blackfire']['agent']['https_proxy'] = nil
 default['blackfire']['agent']['server_id'] = nil
 default['blackfire']['agent']['server_token'] = nil
 default['blackfire']['agent']['log_level'] = 1

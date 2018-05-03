@@ -21,6 +21,8 @@ template '/etc/blackfire/agent' do
   variables(
     'ca_cert' => node[cookbook_name]['agent']['ca_cert'],
     'collector' => node[cookbook_name]['agent']['collector'],
+    'http_proxy' => node[cookbook_name]['agent']['http_proxy'],
+    'https_proxy' => node[cookbook_name]['agent']['https_proxy'],
     'server_id' => node[cookbook_name]['agent']['server_id'],
     'server_token' => node[cookbook_name]['agent']['server_token'],
     'log_file' => node[cookbook_name]['agent']['log_file'],

@@ -7,7 +7,7 @@
 
 ;
 ; setting: ca-cert
-; desc   : Sets the PEM encoded certificates
+; desc   : Sets the PEM encoded certicates
 ; default:
 ca-cert=<%= @ca_cert %>
 
@@ -16,6 +16,18 @@ ca-cert=<%= @ca_cert %>
 ; desc   : Sets the URL of Blackfire's data collector
 ; default: https://blackfire.io
 collector=<%= @collector %>
+
+;
+; setting: http-proxy
+; desc   : Sets the HTTP proxy to use
+; default:
+http-proxy=<%= @http_proxy %>
+
+;
+; setting: https-proxy
+; desc   : Sets the HTTPS proxy to use
+; default:
+https-proxy=<%= @https_proxy %>
 
 ;
 ; setting: log-file
@@ -49,6 +61,6 @@ socket=<%= @socket %>
 
 ;
 ; setting: spec
-; desc   : Sets the path to the json specifications file
+; desc   : Sets the path to the JSON specifications file
 ; default:
 spec=<%= @spec %>
